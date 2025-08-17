@@ -7,8 +7,9 @@ import { Footer } from "./components/Footer";
 import { Cart } from "./components/Cart";
 
 export default function App() {
-
-const { currentRoute, navigate } = useRouter(window.location.pathname);
+  
+const BASE_PATH = '/mr-black';
+const { currentRoute, navigate } = useRouter( window.location.pathname.replace(BASE_PATH, '') || '/');
 
 
   const renderPage = () => {
