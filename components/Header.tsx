@@ -1,10 +1,6 @@
 //import { Button } from "./ui/button";
 //import {  Menu } from "lucide-react";
 
-interface HeaderProps {
-  currentRoute: string;
-  onNavigate: (path: string) => void;
-}
 
 //{ currentRoute, onNavigate }: HeaderProps
 
