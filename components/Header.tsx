@@ -59,7 +59,7 @@ export function Header({ currentRoute, onNavigate }: HeaderProps) {
         <div className="flex items-center space-x-4">
           <Button 
             className="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-2 rounded-lg transition-colors font-semibold"
-            onClick={() => onNavigate('/pedido')}
+            onClick={() => onNavigate('mr-black/pedido')}
           >
             Pedir Ahora
           </Button>

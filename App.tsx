@@ -7,10 +7,10 @@ import { Footer } from "./components/Footer";
 import { Cart } from "./components/Cart";
 
 export default function App() {
-  
+
 const BASE_PATH = '/mr-black';
 const { currentRoute, navigate } = useRouter( window.location.pathname.replace(BASE_PATH, '') || '/');
-
+console.log(currentRoute)
 
   const renderPage = () => {
     switch (currentRoute.toLowerCase()) {
