@@ -41,7 +41,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-3xl"></div>
             <ImageWithFallback
-              src="public//home.png"
+              src="/mr-black/home.png"
               alt="Hamburguesa gourmet Mr. Black"
               className="w-full h-96 lg:h-[500px] object-cover rounded-3xl shadow-2xl border-2 border-gray-800"
             />

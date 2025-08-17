@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className=" px-3 py-2 rounded-lg inline-block mb-4">
-               <img src="public\MrBlackLogo.png" className="h-20 w-auto" />
+               <img src="/mr-black/MrBlackLogo.png" className="h-20 w-auto" />
             </div>
             <p className="text-gray-400 mb-4">
               Las mejores hamburguesas artesanales de Sunchales. Ingredientes frescos, 
@@ -90,7 +90,7 @@ export function Footer() {
             © 2024 <span className="text-yellow-400">Mr. Black</span> Sunchales. Todos los derechos reservados.
           </p>
           <p className="text-gray-400 text-sm mt-2 md:mt-0">
-            Desarrollado con <span className="text-yellow-400">❤️</span> para los amantes de las burgers
+            Desarrollado por elherno 
           </p>
         </div>
       </div>

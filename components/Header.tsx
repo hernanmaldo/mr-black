@@ -16,7 +16,7 @@ export function Header({ currentRoute, onNavigate }: HeaderProps) {
             
             onClick={() => onNavigate('/')}
           >
-            <img src="public\MrBlackLogo.png" className="h-15 w-auto" />
+            <img src="/mr-black/MrBlackLogo.png" className="h-15 w-auto" />
           </div>
         </div>
 
