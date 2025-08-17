@@ -13,7 +13,7 @@ export function MenuSection() {
       name: "BURGER 4x4 de in-n-out",
       description: "Salsa MrBlack, 4 Medallones de carne, Lechuga, Tomate, Cebolla, Cheddar. Pan de papas",
       price: 15800,
-      image: "4x4.png",
+      image: "/mr-black/4x4.png",
       inStock: true
     },
     {
@@ -21,7 +21,7 @@ export function MenuSection() {
       name: "VIETNAMITA FULL",
       description: "Vietnamita full: salsa Ali olí, Cebolla Crispy, ketchup, Triple medallón de 100gr. Triple queso Cheddar, queso emmental , Bacon. Pan de papa.",
       price: 14000,
-      image: "vietnamita-full.png",
+      image: "/mr-black/vietnamita-full.png",
       inStock: true
     },
     {
@@ -29,7 +29,7 @@ export function MenuSection() {
       name: "DESUBICADA",
       description: "5 Medallones de carne 80gr, 5 Fetas de Cheddar, Doble panceta, Salsa Mr Black.",
       price: 17100,
-      image: "desubicada.png",
+      image: "/mr-black/desubicada.png",
       inStock: true
     },
     {
@@ -37,7 +37,7 @@ export function MenuSection() {
       name: "BURGER CRISPY CHICKEN",
       description: "Lechuga repollada con salsa Mr Black, Tomate, medallón de pollo crispy, ketchup",
       price: 11200,
-      image: "crispy-chiken.png",
+      image: "/mr-black/crispy-chiken.png",
       inStock: false
     },
     {
@@ -45,7 +45,7 @@ export function MenuSection() {
       name: "BURGER EGGSPLOTION",
       description: "Salsa MrBlack, Medallón de 100gr. Cheddar, Bacon, Huevo Frito.",
       price: 11000,
-      image: "eggsplotion.png", 
+      image: "/mr-black/eggsplotion.png", 
       inStock: true
     },
     {
@@ -53,7 +53,7 @@ export function MenuSection() {
       name: "TRIPLE X",
       description: "Salsa Mr Black, triple carne 80gr, triple cheddar, triple bastones de mozzarella envueltos en panceta Ahumada, ketchup",
       price: 17500,
-      image: "triple-x.png",
+      image: "/mr-black/triple-x.png",
       inStock: true
     }
   ];
