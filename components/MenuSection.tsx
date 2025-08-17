@@ -89,11 +89,11 @@ export function MenuSection() {
             <Card key={item.id} className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:shadow-yellow-400/20 bg-gray-900 border-gray-800">
               <div className="flex flex-col md:flex-row">
                 {/* Image Section */}
-                <div className="relative md:w-1/3 lg:w-1/4 overflow-hidden rounded-t-lg">
+                <div className="relative md:w-1/4 lg:w-1/3 bg-white overflow-hidden rounded-t-lg">
                   <ImageWithFallback
                     src={item.image}
                     alt={item.name}
-                    className="w-full h-64 md:h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                   {!item.inStock && (
                     <Badge 
