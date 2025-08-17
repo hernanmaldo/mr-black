@@ -2,7 +2,7 @@ import { useCart } from "./CartProvider";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "./ui/ImageWithFallback";
 
 export function MenuSection() {
   const { dispatch } = useCart();

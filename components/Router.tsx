@@ -24,11 +24,11 @@ export function Route({ path, children }: RouteProps) {
 export function useRouter(initialRoute: string = '/') {
   // Inicializamos desde la URL real
   const [currentRoute, setCurrentRoute] = React.useState(
-    window.location.pathname || initialRoute
+    window.location.hash.replace('#', '') || initialRoute
   );
 
   const navigate = (path: string) => {
-    setCurrentRoute(path);
+    window.location.hash = path;
     window.history.pushState(null, '', path);
   };
 

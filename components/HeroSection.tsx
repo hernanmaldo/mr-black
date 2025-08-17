@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "./ui/ImageWithFallback";
 
 interface HeroSectionProps {
   onNavigate?: (path: string) => void;

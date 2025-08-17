@@ -2,7 +2,7 @@ import { useCart } from "./CartProvider";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
 import { ShoppingCart, Plus, Minus, Trash2 } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "./ui/ImageWithFallback";
 
 export function Cart() {
   const { state, dispatch } = useCart();

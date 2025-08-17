@@ -22,6 +22,14 @@ console.log(currentRoute)
   };
 
   return (
+        <CartProvider>
+          <Header  />
+          <MenuSection />
+          <Cart />
+          <Footer />
+        </CartProvider>
+          );
+    {/*
     <CartProvider>
       <div className="min-h-screen bg-black">
         <Header currentRoute={currentRoute} onNavigate={navigate} />
@@ -29,10 +37,10 @@ console.log(currentRoute)
         {renderPage()}
         
         <Footer />
-        
-        {/* Floating Cart Button */}
+
         <Cart />
       </div>
     </CartProvider>
-  );
+    */}
+
 }
