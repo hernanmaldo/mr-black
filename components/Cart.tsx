@@ -1,8 +1,9 @@
 import { useCart } from "./CartProvider";
 import { Button } from "./ui/button";
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "./ui/sheet";
 import { ShoppingCart, Plus, Minus, Trash2 } from "lucide-react";
 import { ImageWithFallback } from "./ui/ImageWithFallback";
+import { X } from "lucide-react";
 
 export function Cart() {
   const { state, dispatch } = useCart();
@@ -22,10 +23,11 @@ export function Cart() {
     <Sheet open={state.isOpen} onOpenChange={() => dispatch({ type: 'TOGGLE_CART' })}>
       <SheetTrigger asChild>
         <Button 
-          variant="outline" 
+          variant="destructive" 
           size="icon" 
-          className="fixed bottom-6 right-6 bg-yellow-400 hover:bg-yellow-500 text-black border-yellow-400 shadow-lg z-40 w-14 h-14 rounded-full"
-        >
+          className="fixed bottom-6 right-6 bg-yellow-400 hover:bg-yellow-500 text-black border-yellow-400 shadow-lg z-40 w-20 h-20 rounded-full"
+        > 
+
           <ShoppingCart className="h-6 w-6" />
           {totalItems > 0 && (
             <span className="absolute -top-2 -right-2 bg-black text-yellow-400 text-xs rounded-full w-6 h-6 flex items-center justify-center font-bold">
@@ -34,9 +36,21 @@ export function Cart() {
           )}
         </Button>
       </SheetTrigger>
-      <SheetContent className="w-full sm:max-w-md bg-black border-l border-gray-800">
-        <SheetHeader>
-          <SheetTitle className="text-2xl font-bold text-white">Tu <span className="text-yellow-400">Pedido</span></SheetTitle>
+      <SheetContent className=" w-full sm:max-w-md bg-black border-l border-gray-800">
+        <SheetHeader className="flex flex-row items-center justify-between">
+
+          <SheetTitle className="text-2xl font-bold text-white ">Tu <span className="text-yellow-400">Pedido</span></SheetTitle>
+          {/* Botón a la izquierda */}
+          <SheetClose className="ml-auto">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="text-gray-400 hover:text-yellow-400"
+            >              
+              <X/>
+            </Button>
+          </SheetClose>
+          {/* Título a la derecha */}
         </SheetHeader>
         
         <div className="mt-6 flex-1 overflow-y-auto">
@@ -44,7 +58,7 @@ export function Cart() {
             <div className="flex flex-col items-center justify-center h-64 text-gray-400">
               <ShoppingCart className="h-16 w-16 mb-4 opacity-50" />
               <p className="text-lg">Tu carrito está vacío</p>
-              <p className="text-sm">Agrega algunos productos deliciosos</p>
+              <p className="text-sm">Agrega algunos productos </p>
             </div>
           ) : (
             <div className="space-y-4">

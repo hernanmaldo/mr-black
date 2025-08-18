@@ -14,7 +14,8 @@ export function MenuSection() {
       description: "Salsa MrBlack, 4 Medallones de carne, Lechuga, Tomate, Cebolla, Cheddar. Pan de papas",
       price: 15800,
       image: "/mr-black/4x4.png",
-      inStock: true
+      inStock: true,
+      
     },
     {
       id: "vietnamita-full",
@@ -22,7 +23,8 @@ export function MenuSection() {
       description: "Vietnamita full: salsa Ali olí, Cebolla Crispy, ketchup, Triple medallón de 100gr. Triple queso Cheddar, queso emmental , Bacon. Pan de papa.",
       price: 14000,
       image: "/mr-black/vietnamita-full.png",
-      inStock: true
+      inStock: true,
+      badge: "LA MAS VENDIDA"
     },
     {
       id: "desubicada",
@@ -54,7 +56,8 @@ export function MenuSection() {
       description: "Salsa Mr Black, triple carne 80gr, triple cheddar, triple bastones de mozzarella envueltos en panceta Ahumada, ketchup",
       price: 17500,
       image: "/mr-black/triple-x.png",
-      inStock: true
+      inStock: true,
+      badge: "NUEVA"
     }
   ];
 
@@ -68,7 +71,7 @@ export function MenuSection() {
         image: item.image
       }
     });
-    dispatch({ type: 'TOGGLE_CART' });
+    //dispatch({ type: 'TOGGLE_CART' });
   };
 
   return (
@@ -101,6 +104,13 @@ export function MenuSection() {
                       className="absolute top-4 right-4 bg-red-600 text-white"
                     >
                       Sin Stock
+                    </Badge>
+                  )}
+                  {item.badge && item.inStock && (
+                    <Badge 
+                      className="absolute top-4 right-4 bg-yellow-600 text-white"
+                    >
+                      {item.badge}
                     </Badge>
                   )}
                 </div>
